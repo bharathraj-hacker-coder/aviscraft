@@ -1,0 +1,363 @@
+* {
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+/*SCROLLBAR*/ 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #dcdcdc; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e31e24; 
+  }
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+#header {
+  background-image: url(../images/navbarbg.jpg);
+  padding: 10px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  margin: 0px;
+  display: block;
+}
+
+#header .logo img {
+    margin-top: -10px;
+    padding: 0;
+    display: block;
+    float: left;
+    width: 170px;
+    height: 95px;
+}
+
+.container {
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Meu Container */
+
+#nav-menu-container {
+    float: right;
+    display: block;
+    margin-top: 40px;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+/* Nav Meu Styling */
+
+.nav-menu a {
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  color: #dcdcdc;
+  font-weight: 600;
+  font-size: 18px;
+  outline: none;
+}
+
+.nav-menu .menu-active,
+.nav-menu a:hover {
+  color: #e31e24;
+  display: block;
+}
+
+.nav-menu > li {
+  margin-left: 8px;
+}
+.nav-menu > li > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #e31e24;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-menu a:hover:before,
+.nav-menu li:hover > a:before{
+  visibility: visible;
+  width: 100%;
+}
+
+.men{
+  display: none;
+}
+@media screen and (max-width: 960px) {
+    .nshow{
+      display: none;
+    }
+    .sidepanel  {
+      background-image: url(../images/sidenavbarbg.jpg);
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      height: 100%;
+      top: 0;
+      right: 0;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidepanel a:hover {
+        border-bottom: 3px solid #e31e24;
+    }
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 25px;
+    }
+    .openbtn,.closebtn {
+        background: #e31e24;
+        color: #dcdcdc;
+        font-size: 25px;
+        border: 2px solid #dcdcdc;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+    }
+    .openbtn:hover,.closebtn:hover {
+        background:#dcdcdc;
+        color: #e31e24;
+    }
+
+    .men{
+        float: right;
+        padding: 10px 5px 10px 10px;
+        display: block;
+    }
+    .men a{
+      padding: 15px;
+      text-decoration: none;
+      display: block;
+      color: #dcdcdc;
+      font-weight: 600;
+      font-size: 18px;
+      outline: none;
+    }
+
+  .men .menu-active,
+  .men a:hover {
+        color: #e31e24;
+    }
+}
+.slideshow-container {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.pagetitlebg img {
+    margin-top: 100px;
+    overflow: visible;
+    width: 100%;
+}
+.pagetitlebg {
+    position: relative;
+    text-align: center;
+}
+.pagetitlebg .centered{
+    margin-top: 50px;
+    position:absolute ;
+    top:50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    color:#e31e24 ;
+    background-color: #dcdcdc;
+    border: 3px solid #e31e24;
+    letter-spacing: 4px;
+    font-size: 30px;
+    padding: 10px 30px 10px;
+}
+.contentce{
+  width: 100%;
+  height:250px;
+}
+.homeabout{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #000000;
+  text-align: center;
+}
+.homeabout .title{
+  font-size: 30px;
+  width: 100%;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.homeabout .parag{
+  padding-left: 4%;
+  width: 100%;
+  padding-right: 4%;
+  font-size: 20px;
+  font-weight: 400; 
+}
+.whycfrp{
+  background-color: #e31e24;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  color: #dcdcdc;
+  padding: 25px 0px 25px 0px;
+}
+.whycfrp .title{
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.whycfrp .properties{
+  display: flex;
+  height: 300px;
+}
+
+.propertiesr, .propertiesl {
+  display: flex;
+  flex-direction: row;
+}
+.whycfrp .properties .elasticity,.chemical,.tensile,.lowdensity{
+  text-align: center;
+  position: relative;
+  margin-top: 70px;
+  width: 50%;
+}
+.whycfrp .properties img{
+  width: 125px;
+  border-radius: 50%;
+  border: 3px solid #000000;
+}
+.whycfrp .properties h1{
+  height: 80px;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+}
+.whycfrp .properties span{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footer{
+  height: 50px;
+  color: #dcdcdc;
+  font-size: 15px;
+  background-color: #000000;
+  padding: 15px;
+}
+.footer .leftalign{
+  float: left;
+}
+.footer .rightalign{
+  float: right;
+}
+
+
+
+@media screen and (max-width: 800px){
+  .homeabout{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .homeabout .title{
+    font-size: 20px;
+  }
+  .homeabout .parag{
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 15px; 
+  }
+  .whycfrp{
+    height: 550px;
+  }
+  .whycfrp .title{
+    font-size:20px;
+    font-weight: 600;
+  }
+  .propertiesr, .propertiesl {
+    flex-direction: column;
+    align-items: center;
+  }
+  .whycfrp .properties .elasticity,.chemical,.tensile,.lowdensity{
+    width: auto; 
+  }
+  .whycfrp .properties img{
+    width: 90px;
+  }
+  .whycfrp .properties h1{
+    font-size: 20px;
+    margin-bottom: -30px;
+  }
+  .whycfrp .properties span{
+    font-size: 15px; 
+  }
+  .pagetitlebg .centered{
+    left: 50%;
+    font-size: 18px;
+  }
+  .footer{
+    text-align: center;
+    font-size: 12px;
+  }
+  .footer .leftalign,
+  .footer .rightalign{
+    float: none;
+  }
+}
