@@ -428,12 +428,132 @@ body{
 /*--------------------------------------------------------------
 # about us start
 --------------------------------------------------------------*/
+.aboutuscontainer{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.aboutusabout{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: #000000;
+  text-align: center;
+}
+.aboutusabout .title{
+  font-size: 32px;
+  color: #a01e32;
+  font-family: 'Bitter', serif;
+  width: 100%;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.aboutusabout .parag{
+  padding-left: 4%;
+  width: 100%;
+  padding-right: 4%;
+  font-size: 16px;
+  font-weight: 400; 
+}
+@media screen and (max-width: 800px){
+  .aboutusabout{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .aboutusabout .title{
+    font-size: 20px;
+  }
+  .aboutusabout .parag{
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 15px; 
+  }
+}
 /*--------------------------------------------------------------
 # about us end
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # contact us start
 --------------------------------------------------------------*/
+.contactuscontainer{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 30px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+.contactform{
+  font-family: 'Bitter', serif;
+  width: 45%;
+  height: 600px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contactform input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contactsubmit {
+  background-color: #a01e32;
+  color: #dcdcdc;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contactsubmit:hover {
+  background-color: #dcdcdc;
+  color: #a01e32;
+}
+.contactaddress{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 45%;
+  padding: 20px;
+  height: 600px;
+}
+.contactaddress .addcontent{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px; 
+}
+.contactaddress i{
+  padding-right: 10px;
+  color: #a01e32;
+}
+.mapview{
+  padding: 20px;
+}
+@media screen and (max-width: 930px){
+  .contactuscontainer{
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+  }
+  .contactform{
+    width: 90%;
+  }
+  .contactaddress{
+    height: 280px;
+    width: 90%;
+  }
+}
+
 /*--------------------------------------------------------------
 # contact us end
 --------------------------------------------------------------*/
