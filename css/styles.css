@@ -545,9 +545,10 @@ body{
   }
   .contactform{
     width: 90%;
+    padding: 0;
   }
   .contactaddress{
-    height: 340px;
+    height: 250px;
     width: 90%;
   }
 }
