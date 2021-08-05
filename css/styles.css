@@ -29,7 +29,7 @@ body{
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #a01e32; 
+    background: #e31e24; 
   }
 /*--------------------------------------------------------------
 # Header
@@ -103,7 +103,7 @@ body{
 
 .nav-menu .menu-active,
 .nav-menu a:hover {
-  color: #a01e32;
+  color: #e31e24;
   display: block;
 }
 
@@ -117,7 +117,7 @@ body{
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #a01e32;
+  background-color: #e31e24;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -149,7 +149,7 @@ body{
     }
 
     .sidepanel a:hover {
-        border-bottom: 3px solid #a01e32;
+        border-bottom: 3px solid #e31e24;
     }
     .sidepanel .closebtn {
         position: absolute;
@@ -158,7 +158,7 @@ body{
         font-size: 20px;
     }
     .openbtn,.closebtn {
-        background: #a01e32;
+        background: #e31e24;
         color: #dcdcdc;
         font-size: 20px;
         border: 2px solid #dcdcdc;
@@ -168,7 +168,7 @@ body{
     }
     .openbtn:hover,.closebtn:hover {
         background:#dcdcdc;
-        color: #a01e32;
+        color: #e31e24;
     }
 
     .men{
@@ -189,7 +189,7 @@ body{
 
   .men .menu-active,
   .men a:hover {
-        color: #a01e32;
+        color: #e31e24;
     }
 }
 /*--------------------------------------------------------------
@@ -229,122 +229,127 @@ body{
     top:50%;
     left: 30%;
     transform: translate(-50%,-50%);
-    color:#a01e32 ;
+    color:#e31e24 ;
     background-color: #dcdcdc;
     letter-spacing: 4px;
     font-size: 30px;
     padding: 10px 30px 10px;
 }
-.homeabout{
+.homecontainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 40px;
+  font-weight: 400;
+}
+.homecontainer .parag{
+  width: 40%;
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  padding-right: 4%;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;   
+}
+.homecontainer .image{
+  width: 50%;
+  padding-left: 5%;
+  display: flex;
+  justify-content: center;
+}
+.homecontainer .image img{
+  padding: 2%;
+  width: 100%;
+}
+.homeexpertise{
   display: flex;
   flex-wrap: wrap;
   padding: 40px;
   color: #000000;
   text-align: center;
 }
-.homeabout .title{
+.homeexpertise .title{
   font-size: 32px;
-  color: #a01e32;
+  color: #e31e24;
   font-family: 'Bitter', serif;
   width: 100%;
   font-weight: 600;
   padding-bottom: 30px;
 }
-.homeabout .parag{
+.homeexpertise .parag{
   padding-left: 4%;
   width: 100%;
   padding-right: 4%;
   font-size: 16px;
   font-weight: 400; 
 }
-.whycfrp{
-  background-color: #a01e32;
+.ourbusiness{
+  padding: 0 2% 2%;
+  padding-bottom: 40px;
   width: 100%;
-  height: 400px;
   display: flex;
   justify-content: center;
-  color: #dcdcdc;
-  padding: 25px 0px 25px 0px;
+  flex-wrap: wrap;
 }
-.whycfrp .title{
-  font-family: 'Bitter', serif;
-  position: absolute;
+.ourbusiness .title{
   font-size: 32px;
-  font-weight: 600;
   text-align: center;
+  color: #e31e24;
+  font-family: 'Bitter', serif;
+  width: 100%;
+  font-weight: 600;
+  padding-bottom: 30px;
 }
-.whycfrp .properties{
+.ourbusiness .contpic{
+  width: 100%;
   display: flex;
-  height: 300px;
-}
-
-.propertiesr, .propertiesl {
-  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   flex-direction: row;
 }
-.whycfrp .properties .elasticity,.chemical,.tensile,.lowdensity{
-  text-align: center;
-  position: relative;
-  margin-top: 70px;
-  width: 50%;
+.ourbusiness .contpic .leftcont,.rightcont{
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-.whycfrp .properties img{
-  width: 125px;
-  border-radius: 50%;
-  border: 3px solid #000000;
+@media screen and (max-width: 930px){
+  .homecontainer{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .homecontainer .image{
+    padding-left: 0;
+    width: 80%;
+    padding-bottom: 20px;
+  }
+  .homecontainer .parag{
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 80%;
+  }
 }
-.whycfrp .properties h1{
-  height: 80px;
-  width: 100%;
-  font-size: 24px;
-  font-weight: 600;
-}
-.whycfrp .properties span{
-  width: 100%;
-  font-size: 16px;
-  font-weight: 400;
-}
-
 @media screen and (max-width: 800px){
-  .homeabout{
+  .homeexpertise{
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .homeabout .title{
+  .homeexpertise .title{
     font-size: 20px;
   }
-  .homeabout .parag{
+  .homeexpertise .parag{
     padding-left: 0;
     padding-right: 0;
-    font-size: 15px; 
-  }
-  .whycfrp{
-    height: 550px;
-  }
-  .whycfrp .title{
-    font-size:20px;
-    font-weight: 600;
-  }
-  .propertiesr, .propertiesl {
-    flex-direction: column;
-    align-items: center;
-  }
-  .whycfrp .properties .elasticity,.chemical,.tensile,.lowdensity{
-    width: auto; 
-  }
-  .whycfrp .properties img{
-    width: 90px;
-  }
-  .whycfrp .properties h1{
-    font-size: 20px;
-    margin-bottom: -30px;
-  }
-  .whycfrp .properties span{
     font-size: 15px; 
   }
   .pagetitlebg .centered{
     left: 50%;
     font-size: 18px;
+  }
+  .homecontainer .objectimage{
+    height: 400px;
   }
 }
 /*--------------------------------------------------------------
@@ -360,9 +365,9 @@ body{
 # product page
 --------------------------------------------------------------*/
 .containermain .card {
-  box-shadow: 0px 3px 6px #a01e32;
+  box-shadow: 0px 3px 6px #e31e24;
   border-radius: 15px;
-  border: 2px solid #a01e32;
+  border: 2px solid #e31e24;
   transition: 0.3s;
   background-color: #ffffff;
   margin: 20px;
@@ -396,7 +401,7 @@ body{
   height: 50px;
   font-size: 24px;
   font-weight: 600;
-  color: #a01e32;
+  color: #e31e24;
   font-family: 'Bitter', serif;
 }
 .containermain .productcontent{
@@ -440,7 +445,7 @@ body{
 }
 .aboutusabout .title{
   font-size: 32px;
-  color: #a01e32;
+  color: #e31e24;
   font-family: 'Bitter', serif;
   width: 100%;
   font-weight: 600;
@@ -483,7 +488,7 @@ body{
   font-weight: 400;
   padding-bottom: 30px;
 }
-.contactform{
+.contactuscontainer .contactform{
   font-family: 'Bitter', serif;
   width: 45%;
   height: 600px;
@@ -491,7 +496,7 @@ body{
   display: flex;
   flex-wrap: wrap;
 }
-.contactform input[type=text], select, textarea {
+.contactuscontainer .contactform input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -503,8 +508,8 @@ body{
   resize: vertical;
 }
 
-.contactsubmit {
-  background-color: #a01e32;
+.contactuscontainer .contactform .contactsubmit {
+  background-color: #e31e24;
   color: #dcdcdc;
   font-size: 18px;
   padding: 12px 20px;
@@ -513,11 +518,11 @@ body{
   cursor: pointer;
 }
 
-.contactsubmit:hover {
+.contactuscontainer .contactform .contactsubmit:hover {
   background-color: #dcdcdc;
-  color: #a01e32;
+  color: #e31e24;
 }
-.contactaddress{
+.contactuscontainer .contactaddress{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -525,15 +530,15 @@ body{
   padding: 20px;
   height: 600px;
 }
-.contactaddress .addcontent{
+.contactuscontainer .contactaddress .addcontent{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding: 10px; 
 }
-.contactaddress i{
+.contactuscontainer .contactaddress i{
   padding-right: 10px;
-  color: #a01e32;
+  color: #e31e24;
 }
 .mapview{
   padding: 20px;
@@ -543,12 +548,12 @@ body{
     flex-direction: column;
     align-items: center;
   }
-  .contactform{
+  .contactuscontainer .contactform{
     width: 90%;
-    padding: 0;
   }
-  .contactaddress{
+  .contactuscontainer .contactaddress{
     height: 340px;
+    padding: 0px;
     width: 90%;
   }
 }
