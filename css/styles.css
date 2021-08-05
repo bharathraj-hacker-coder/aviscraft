@@ -553,7 +553,7 @@ body{
   }
   .contactuscontainer .contactaddress{
     height: 340px;
-    padding: 0px;
+    padding: 20px 0px;
     width: 90%;
   }
 }
