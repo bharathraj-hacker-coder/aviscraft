@@ -244,11 +244,11 @@ body{
   font-weight: 400;
 }
 .homecontainer .parag{
-  width: 40%;
+  width: 50%;
   display: flex;
   text-align: justify;
   align-items: center;
-  padding-right: 4%;
+  padding-left: 4%;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;   
@@ -256,8 +256,6 @@ body{
 .homecontainer .image{
   width: 50%;
   padding-left: 5%;
-  display: flex;
-  justify-content: center;
 }
 .homecontainer .image img{
   padding: 2%;
@@ -288,9 +286,9 @@ body{
 .ourbusiness{
   padding: 0 2% 2%;
   padding-bottom: 40px;
-  width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
   flex-wrap: wrap;
 }
 .ourbusiness .title{
@@ -302,18 +300,29 @@ body{
   font-weight: 600;
   padding-bottom: 30px;
 }
-.ourbusiness .contpic{
-  width: 100%;
+.ourbusiness .column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row;
 }
-.ourbusiness .contpic .leftcont,.rightcont{
-  width: 45%;
+
+.ourbusiness .parag {
+  position: absolute;
+  bottom: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  font-size: 16px;
+  font-weight: 400; 
+  width: 96%;
+  padding: 20px;
+  height: 20%;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 @media screen and (max-width: 930px){
   .homecontainer{
@@ -321,25 +330,27 @@ body{
     align-items: center;
   }
   .homecontainer .image{
+    display: flex;
+    justify-content: center;
     padding-left: 0;
-    width: 80%;
+    width: 100%;
     padding-bottom: 20px;
   }
   .homecontainer .parag{
+    font-size: 15px; 
     padding-left: 2%;
     padding-right: 2%;
     width: 80%;
   }
 }
 @media screen and (max-width: 800px){
-  .homeexpertise{
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .ourbusiness .column {
+    width: 50%;
   }
-  .homeexpertise .title{
+  .homeexpertise .title,.ourbusiness .title{
     font-size: 20px;
   }
-  .homeexpertise .parag{
+  .homeexpertise .parag,.ourbusiness .parag {
     padding-left: 0;
     padding-right: 0;
     font-size: 15px; 
