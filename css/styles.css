@@ -648,6 +648,67 @@ body{
 /*--------------------------------------------------------------
 # footer
 --------------------------------------------------------------*/
+.quickfooter{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 30px;
+  background-color: #dcdcdc;
+  font-weight: 400;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.quickfooter .quickaddress{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 52%;
+  padding: 20px;
+  height: 300px;
+  border-right: 2px solid #e31e24;
+}
+.quickfooter .quicklink{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 46%;
+  padding: 20px;
+  height: 300px;
+}
+.quickfooter .quickaddress .contentaddress{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px; 
+}
+.quickfooter .quicklink .contentaddlink{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 10px; 
+}
+.quickfooter .quicklink .contentaddlink .title{
+  font-size: 20px;
+  color: #e31e24;
+  font-family: 'Bitter', serif;
+  width: 100%;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.quickfooter .quickaddress i{
+  padding-right: 10px;
+  color: #e31e24;
+}
+.quickfooter .quicklink a{
+  color: #000000;
+  padding: 5px;
+}
+.quickfooter .quicklink .menu-active,
+.quickfooter .quicklink a:hover {
+  color: #e31e24;
+}
 .footer{
   height: 50px;
   color: #dcdcdc;
@@ -663,6 +724,22 @@ body{
   float: right;
 }
 @media screen and (max-width: 800px){
+  .quickfooter{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 15px;
+  }
+  .quickfooter .quickaddress{
+    width: 90%;
+    height:250px;
+    border-right: none;
+    border-bottom: 2px solid #e31e24;
+  }
+  .quickfooter .quicklink{
+    height: 200px;
+    width: 90%;
+  }
   .footer{
     text-align: center;
     font-size: 12px;
