@@ -246,15 +246,27 @@ body{
 .homecontainer .parag{
   width: 50%;
   display: flex;
-  text-align: center;
-  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  flex-direction: column;
   padding-left: 4%;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;   
 }
+.homecontainer .parag .title{
+  font-size: 30px;
+  color: #e31e24;
+  font-family: 'Bitter', serif;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
 .homecontainer .image{
   width: 50%;
+  align-self: center;
   padding-left: 5%;
 }
 .homecontainer .image img{
@@ -269,7 +281,7 @@ body{
   text-align: center;
 }
 .homeexpertise .title{
-  font-size: 32px;
+  font-size: 30px;
   color: #e31e24;
   font-family: 'Bitter', serif;
   width: 100%;
@@ -277,6 +289,7 @@ body{
   padding-bottom: 30px;
 }
 .homeexpertise .parag{
+  text-align: justify;
   padding-left: 20px;
   width: 100%;
   padding-right: 20px;
@@ -292,7 +305,7 @@ body{
   flex-wrap: wrap;
 }
 .ourbusiness .title{
-  font-size: 32px;
+  font-size: 30px;
   text-align: center;
   color: #e31e24;
   font-family: 'Bitter', serif;
@@ -333,9 +346,10 @@ body{
   justify-content: center;
   text-align: center;
 }
+
 @media screen and (max-width: 930px){
   .homecontainer{
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
   }
   .homecontainer .image{
@@ -343,13 +357,17 @@ body{
     justify-content: center;
     padding-left: 0;
     width: 100%;
-    padding-bottom: 20px;
+    padding-top: 20px;
   }
   .homecontainer .parag{
     font-size: 15px; 
     padding-left: 2%;
     padding-right: 2%;
-    width: 80%;
+    width: 90%;
+  }
+  .homecontainer .parag .title{
+    font-size: 22px;
+    line-height: 25px;
   }
 }
 @media screen and (max-width: 800px){
@@ -357,12 +375,12 @@ body{
     width: 50%;
   }
   .homeexpertise .title,.ourbusiness .title{
-    font-size: 24px;
+    font-size: 22px;
   }
   .homeexpertise .parag{
     padding-left: 0;
     padding-right: 0;
-    font-size: 16px; 
+    font-size: 15px; 
   }
   .ourbusiness .parag {
     padding-left: 0;
@@ -415,7 +433,7 @@ body{
 }
 
 .containermain .maintitle{
-  font-size: 32px;
+  font-size: 30px;
   text-align: center;
   color: #e31e24;
   font-family: 'Bitter', serif;
@@ -476,7 +494,7 @@ body{
 }
 @media screen and (max-width: 800px) {
   .containermain .maintitle{
-    font-size: 24px;
+    font-size: 22px;
   }
   .containermain  .card {
       width: 85%;
@@ -501,39 +519,36 @@ body{
 /*--------------------------------------------------------------
 # about us start
 --------------------------------------------------------------*/
-.aboutuscontainer{
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 .aboutusabout{
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 40px;
   color: #000000;
-  text-align: center;
+  text-align: justify;
 }
 .aboutusabout .title{
-  font-size: 32px;
+  margin-top: -30px;
+  font-size: 30px;
   color: #e31e24;
   font-family: 'Bitter', serif;
   width: 100%;
-  font-weight: 600;
+  font-weight:  600;
   padding-bottom: 30px;
+  text-align: center;
 }
 .aboutusabout .parag{
-  padding-left: 4%;
+  padding-left: 20px;
   width: 100%;
-  padding-right: 4%;
+  padding-bottom: 10px;
+  padding-right: 20px;
   font-size: 16px;
   font-weight: 400; 
 }
 @media screen and (max-width: 800px){
   .aboutusabout{
-    margin-top: 15px;
-    margin-bottom: 15px;
   }
   .aboutusabout .title{
-    font-size: 20px;
+    font-size: 24px;
   }
   .aboutusabout .parag{
     padding-left: 0;
