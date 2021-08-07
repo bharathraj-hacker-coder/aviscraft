@@ -665,7 +665,7 @@ body{
   flex-wrap: wrap;
   flex-direction: column;
   width: 52%;
-  padding: 20px;
+  padding: 5px;
   height: 300px;
   border-right: 2px solid #e31e24;
 }
@@ -674,7 +674,7 @@ body{
   flex-wrap: wrap;
   flex-direction: column;
   width: 46%;
-  padding: 20px;
+  padding: 5px;
   height: 300px;
 }
 .quickfooter .quickaddress .contentaddress{
@@ -732,7 +732,7 @@ body{
   }
   .quickfooter .quickaddress{
     width: 90%;
-    height:290px;
+    height:230px;
     border-right: none;
     border-bottom: 2px solid #e31e24;
   }
