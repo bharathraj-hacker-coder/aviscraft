@@ -399,7 +399,7 @@ body{
   border: 2px solid red;
 }
 .markets .lineend{
-  width: 200px;
+  width: 280px;
   margin-left: 185px;
   margin-top: 18px;
   height: 40px;
@@ -449,29 +449,20 @@ body{
     font-size: 15px; 
   }
   .homeexpertise .linestart{
-    width: 25px;
     margin-left: -15px;
     margin-top: 18px;
     height: 40px;
-    position: absolute;
-    border-top: 2px solid red;
-    border-left: 2px solid red;
   }
   .homeexpertise .boxfull{
     width: 170px;
     margin-left: 10px;
     height: 40px;
-    margin-top: -2px;
-    position: absolute;
-    border: 2px solid red;
   }
   .homeexpertise .lineend{
     width: 120px;
     margin-left: 180px;
     margin-top: 18px;
-    height: 40px;
-    position: absolute;
-    border-top: 2px solid red;  
+    height: 40px; 
   }
   .markets .title{
     font-size: 22px;
@@ -483,25 +474,17 @@ body{
     margin-left: -15px;
     margin-top: 18px;
     height: 40px;
-    position: absolute;
-    border-top: 2px solid red;
-    border-left: 2px solid red;
   }
   .markets .boxfull{
     width: 110px;
     margin-left: 10px;
     height: 40px;
-    margin-top: -2px;
-    position: absolute;
-    border: 2px solid red;
   }
   .markets .lineend{
     width: 180px;
     margin-left: 120px;
     margin-top: 18px;
     height: 40px;
-    position: absolute;
-    border-top: 2px solid red;  
   }
   .ourbusiness .parag {
     padding-left: 0;
