@@ -294,7 +294,7 @@ body{
   width: 25px;
   margin-left: 10px;
   margin-top: 18px;
-  height: 5%;
+  height: 40px;
   position: absolute;
   border-top: 2px solid red;
   border-left: 2px solid red;
@@ -302,7 +302,7 @@ body{
 .homeexpertise .boxfull{
   width: 230px;
   margin-left: 35px;
-  height: 6%;
+  height: 50px;
   margin-top: -2px;
   position: absolute;
   border: 2px solid red;
@@ -311,7 +311,7 @@ body{
   width: 200px;
   margin-left: 265px;
   margin-top: 18px;
-  height: 5%;
+  height: 40px;
   position: absolute;
   border-top: 2px solid red;  
 }
@@ -385,7 +385,7 @@ body{
   width: 25px;
   margin-left: 10px;
   margin-top: 18px;
-  height: 5%;
+  height: 40px;
   position: absolute;
   border-top: 2px solid red;
   border-left: 2px solid red;
@@ -393,7 +393,7 @@ body{
 .markets .boxfull{
   width: 150px;
   margin-left: 35px;
-  height: 6%;
+  height: 50px;
   margin-top: -2px;
   position: absolute;
   border: 2px solid red;
@@ -402,7 +402,7 @@ body{
   width: 200px;
   margin-left: 185px;
   margin-top: 18px;
-  height: 5%;
+  height: 40px;
   position: absolute;
   border-top: 2px solid red;  
 }
@@ -452,7 +452,7 @@ body{
     width: 25px;
     margin-left: -15px;
     margin-top: 18px;
-    height: 5%;
+    height: 40px;
     position: absolute;
     border-top: 2px solid red;
     border-left: 2px solid red;
@@ -460,16 +460,16 @@ body{
   .homeexpertise .boxfull{
     width: 170px;
     margin-left: 10px;
-    height: 5%;
+    height: 40px;
     margin-top: -2px;
     position: absolute;
     border: 2px solid red;
   }
   .homeexpertise .lineend{
-    width: 200px;
+    width: 120px;
     margin-left: 180px;
     margin-top: 18px;
-    height: 5%;
+    height: 40px;
     position: absolute;
     border-top: 2px solid red;  
   }
@@ -482,7 +482,7 @@ body{
     width: 25px;
     margin-left: -15px;
     margin-top: 18px;
-    height: 5%;
+    height: 40px;
     position: absolute;
     border-top: 2px solid red;
     border-left: 2px solid red;
@@ -490,16 +490,16 @@ body{
   .markets .boxfull{
     width: 110px;
     margin-left: 10px;
-    height: 5%;
+    height: 40px;
     margin-top: -2px;
     position: absolute;
     border: 2px solid red;
   }
   .markets .lineend{
-    width: 200px;
+    width: 180px;
     margin-left: 120px;
     margin-top: 18px;
-    height: 5%;
+    height: 40px;
     position: absolute;
     border-top: 2px solid red;  
   }
@@ -569,7 +569,7 @@ body{
   margin-bottom: 15px;
   font-family: 'Bitter', serif;
   width: 100%;
-  height: 50px;
+  height: 40px;
   font-size: 24px;
   font-weight: 600;
   color: #e31e24;
@@ -834,7 +834,7 @@ body{
   color: #e31e24;
 }
 .footer{
-  height: 50px;
+  height: 40px;
   color: #dcdcdc;
   font-size: 12px;
   background-color: #000000;
