@@ -221,7 +221,7 @@ body{
 }
 .pagetitlebg {
     position: relative;
-    text-align: center;
+    text-align: left;
 }
 .pagetitlebg .centered{
     margin-top: 50px;
@@ -260,7 +260,7 @@ body{
   font-family: 'Bitter', serif;
   width: 100%;
   line-height: 40px;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
   padding-bottom: 30px;
 }
@@ -278,15 +278,42 @@ body{
   flex-wrap: wrap;
   padding: 40px;
   color: #000000;
-  text-align: center;
+  text-align: left;
 }
 .homeexpertise .title{
   font-size: 30px;
   color: #e31e24;
   font-family: 'Bitter', serif;
+  padding-left: 50px;
   width: 100%;
+  padding-right: 20px;
   font-weight: 600;
   padding-bottom: 30px;
+}
+.homeexpertise .linestart{
+  width: 25px;
+  margin-left: 10px;
+  margin-top: 18px;
+  height: 5%;
+  position: absolute;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+}
+.homeexpertise .boxfull{
+  width: 230px;
+  margin-left: 35px;
+  height: 6%;
+  margin-top: -2px;
+  position: absolute;
+  border: 2px solid red;
+}
+.homeexpertise .lineend{
+  width: 200px;
+  margin-left: 265px;
+  margin-top: 18px;
+  height: 5%;
+  position: absolute;
+  border-top: 2px solid red;  
 }
 .homeexpertise .parag{
   text-align: justify;
@@ -303,15 +330,6 @@ body{
   justify-content: center;
   position: relative;
   flex-wrap: wrap;
-}
-.ourbusiness .title{
-  font-size: 30px;
-  text-align: center;
-  color: #e31e24;
-  font-family: 'Bitter', serif;
-  width: 100%;
-  font-weight: 600;
-  padding-bottom: 30px;
 }
 .ourbusiness .column {
   float: left;
@@ -346,7 +364,48 @@ body{
   justify-content: center;
   text-align: center;
 }
-
+.markets{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 40px 40px;
+  color: #000000;
+  text-align: left;
+}
+.markets .title{
+  font-size: 30px;
+  color: #e31e24;
+  font-family: 'Bitter', serif;
+  padding-left: 50px;
+  width: 100%;
+  padding-right: 20px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.markets .linestart{
+  width: 25px;
+  margin-left: 10px;
+  margin-top: 18px;
+  height: 5%;
+  position: absolute;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+}
+.markets .boxfull{
+  width: 150px;
+  margin-left: 35px;
+  height: 6%;
+  margin-top: -2px;
+  position: absolute;
+  border: 2px solid red;
+}
+.markets .lineend{
+  width: 200px;
+  margin-left: 185px;
+  margin-top: 18px;
+  height: 5%;
+  position: absolute;
+  border-top: 2px solid red;  
+}
 @media screen and (max-width: 930px){
   .homecontainer{
     flex-direction: column;
@@ -374,13 +433,75 @@ body{
   .ourbusiness .column {
     width: 50%;
   }
-  .homeexpertise .title,.ourbusiness .title{
+  .homeexpertise .title{
     font-size: 22px;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  .ourbusiness .title{
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 0;    
   }
   .homeexpertise .parag{
     padding-left: 0;
     padding-right: 0;
     font-size: 15px; 
+  }
+  .homeexpertise .linestart{
+    width: 25px;
+    margin-left: -15px;
+    margin-top: 18px;
+    height: 5%;
+    position: absolute;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+  }
+  .homeexpertise .boxfull{
+    width: 170px;
+    margin-left: 10px;
+    height: 5%;
+    margin-top: -2px;
+    position: absolute;
+    border: 2px solid red;
+  }
+  .homeexpertise .lineend{
+    width: 200px;
+    margin-left: 180px;
+    margin-top: 18px;
+    height: 5%;
+    position: absolute;
+    border-top: 2px solid red;  
+  }
+  .markets .title{
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  .markets .linestart{
+    width: 25px;
+    margin-left: -15px;
+    margin-top: 18px;
+    height: 5%;
+    position: absolute;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+  }
+  .markets .boxfull{
+    width: 110px;
+    margin-left: 10px;
+    height: 5%;
+    margin-top: -2px;
+    position: absolute;
+    border: 2px solid red;
+  }
+  .markets .lineend{
+    width: 200px;
+    margin-left: 120px;
+    margin-top: 18px;
+    height: 5%;
+    position: absolute;
+    border-top: 2px solid red;  
   }
   .ourbusiness .parag {
     padding-left: 0;
@@ -407,9 +528,9 @@ body{
 # product page
 --------------------------------------------------------------*/
 .containermain .card {
-  box-shadow: 0px 3px 6px #e31e24;
+  box-shadow: 0px 3px 6px #dcdcdc;
   border-radius: 15px;
-  border: 2px solid #e31e24;
+  border: 2px solid #dcdcdc;
   background-color: #ffffff;
   margin: 20px;
   width: 28%;
@@ -425,6 +546,8 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 30px;
+}
+.containermainsub{
     padding-bottom: 30px;
 }
 .containermain .card:hover {
@@ -433,7 +556,8 @@ body{
 
 .containermain .maintitle{
   font-size: 30px;
-  text-align: center;
+  text-align: left;
+  padding-left: 50px;
   color: #e31e24;
   font-family: 'Bitter', serif;
   width: 100%;
@@ -526,27 +650,28 @@ body{
   text-align: justify;
 }
 .aboutusabout .title{
-  margin-top: -30px;
+  margin-top: -50px;
   font-size: 30px;
   color: #e31e24;
   font-family: 'Bitter', serif;
+  padding-left: 20px;
   width: 100%;
+  padding-right: 20px;
   font-weight:  600;
   padding-bottom: 30px;
-  text-align: center;
+  text-align: left;
 }
 .aboutusabout .parag{
   padding-left: 20px;
   width: 100%;
-  padding-bottom: 10px;
   padding-right: 20px;
   font-size: 16px;
   font-weight: 400; 
 }
 @media screen and (max-width: 800px){
-  .aboutusabout{
-  }
   .aboutusabout .title{
+    padding-left: 0;
+    padding-right: 0;
     font-size: 24px;
   }
   .aboutusabout .parag{
@@ -711,7 +836,7 @@ body{
 .footer{
   height: 50px;
   color: #dcdcdc;
-  font-size: 15px;
+  font-size: 12px;
   background-color: #000000;
   padding: 15px;
   font-family: 'Bitter', serif;
@@ -741,7 +866,6 @@ body{
   }
   .footer{
     text-align: center;
-    font-size: 12px;
     padding: 5px;
   }
   .footer .leftalign,
