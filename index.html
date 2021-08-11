@@ -71,6 +71,8 @@
     <div class="mySlides fade">
       <img src="images/aerospace1.jpg" style="width:100%">
     </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <div class="homecontainer">
     <div class="parag">
@@ -120,6 +122,36 @@
     <span class="linestart"></span>
     <span class="lineend"></span>
   </div>
+  <div id="marketcont" class="marketcont">
+    <div class="card">
+      <img src="images/s3.png" class="image1">
+      <div class="centeredtitle">
+        <span>Aerospace and defense</span>
+        <p>We manufacture high performance composite designed to meet the stringuent performance and safety requirements of aerospace markets.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/s3.png" class="image1">
+      <div class="centeredtitle">
+        <span>Industrial composites</span>
+        <p>Industrial composites are used in wind marine construction and transportation and other equipments marine corrosion resistance is required.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/s3.png" class="image1">
+      <div class="centeredtitle">
+        <span>Sports equipment</span>
+        <p>Composite materials are light weight, provide high strength freedom of design easy processing and forming characteristics and they have obtained the widespread application in the manufacture of sports equipments.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/s3.png" class="image1">
+      <div class="centeredtitle">
+        <span>Automotive components</span>
+        <p>Industrial composite materials helps in reducing weight and co2 emissions of existing internal combustion based motor vehicles and optimizing the efficiency of the next generation electric vehicles.</p>
+      </div>
+    </div>
+  </div>
   <div class="quickfooter">
     <div class="quickaddress">
       <div class="contentaddress">
@@ -162,19 +194,36 @@
   </div>
 </body>
 <script>
-var slideIndex = 0;
+  var slideIndex = 0;
+  var slides = document.getElementsByClassName("mySlides");
+
 showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+function showSlides() {    
+    var i;    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+function currentSlide(no) {
+    var i;    
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex = no;
+    slides[no-1].style.display = "block";
+}
+
+function plusSlides(n) {
+  var newslideIndex = slideIndex + n;
+  if(newslideIndex < 4 && newslideIndex > 0){
+     currentSlide(newslideIndex);
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 7000);
 }
 </script>
 </html>
