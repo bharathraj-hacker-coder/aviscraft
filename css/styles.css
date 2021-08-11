@@ -40,7 +40,7 @@ body{
   padding: 10px 0;
   position: fixed;
   left: 0;
-  top: 40px;
+  top: 50px;
   right: 0;
   transition: all 0.5s;
   z-index: 1;
@@ -199,7 +199,7 @@ body{
 # Home page
 --------------------------------------------------------------*/
 .slideshow-container {
-  margin-top: 140px;
+  margin-top: 150px;
   width: 100%;
   position: relative;
 }
@@ -213,8 +213,36 @@ body{
   from {opacity: .4} 
   to {opacity: 1}
 }
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #000000;
+  background-color: #dcdcdc;
+  border: 2px solid #dcdcdc;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: #e31e24;
+  background-color: #ffffff;
+  border: 2px solid #e31e24;
+}
 .pagetitlebg img {
-    margin-top: 100px;
+    margin-top: 150px;
     overflow: visible;
     width: 100%;
     height: 200px;
@@ -224,7 +252,7 @@ body{
     text-align: left;
 }
 .pagetitlebg .centered{
-    margin-top: 50px;
+    margin-top: 70px;
     position:absolute ;
     top:50%;
     left: 30%;
@@ -300,7 +328,7 @@ body{
   border-left: 2px solid red;
 }
 .homeexpertise .lineend{
-  width: 200px;
+  width: 215px;
   margin-left: 265px;
   margin-top: 18px;
   height: 40px;
@@ -383,12 +411,66 @@ body{
   border-left: 2px solid red;
 }
 .markets .lineend{
-  width: 280px;
+  width: 295px;
   margin-left: 185px;
   margin-top: 18px;
   height: 40px;
   position: absolute;
   border-top: 2px solid red;  
+}
+.marketcont .card {
+  margin: 20px;
+  width: 40%;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+.marketcont{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+.marketcont .image1 {
+  position: relative;
+  overflow: visible;
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+}
+.marketcont .centeredtitle {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+}
+.marketcont .centeredtitle span{
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .marketcont  .card {
+      width: 47%;
+      margin:10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .marketcont  .card {
+      width: 90%;
+      margin:15px;
+  }
 }
 @media screen and (max-width: 930px){
   .homecontainer{
@@ -434,13 +516,13 @@ body{
   }
   .homeexpertise .linestart{
     margin-left: -15px;
-    margin-top: 18px;
+    margin-top: 14px;
     height: 40px;
   }
   .homeexpertise .lineend{
-    width: 120px;
+    width: 135px;
     margin-left: 180px;
-    margin-top: 18px;
+    margin-top: 14px;
     height: 40px; 
   }
   .markets .title{
@@ -451,13 +533,13 @@ body{
   .markets .linestart{
     width: 25px;
     margin-left: -15px;
-    margin-top: 18px;
+    margin-top: 14px;
     height: 40px;
   }
   .markets .lineend{
-    width: 180px;
+    width: 195px;
     margin-left: 120px;
-    margin-top: 18px;
+    margin-top: 14px;
     height: 40px;
   }
   .ourbusiness .parag {
@@ -466,6 +548,7 @@ body{
   }
   .pagetitlebg .centered{
     left: 50%;
+    text-align: center;
     font-size: 18px;
   }
   .homecontainer .objectimage{
@@ -478,6 +561,227 @@ body{
 /*--------------------------------------------------------------
 # process capabilities start
 --------------------------------------------------------------*/
+.processcont {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 40px 10px;
+  color: #000000;
+  text-align: justify;
+}
+.processcont .title{
+  font-size: 30px;
+  color: #e31e24;
+  font-family: 'Bitter', serif;
+  padding-left: 50px;
+  width: 100%;
+  padding-right: 20px;
+  font-weight:  600;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.processcont .linestart{
+  width: 25px;
+  margin-left: 10px;
+  margin-top: 18px;
+  height: 40px;
+  position: absolute;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+}
+.processcont .lineend{
+  width: 205px;
+  margin-left: 275px;
+  margin-top: 18px;
+  height: 40px;
+  position: absolute;
+  border-top: 2px solid red;  
+}
+.processcont .subtitle,.headingflow .subtitle{
+  font-size: 24px;
+  color: #e31e24;
+  font-family: 'Bitter', serif;
+  padding-left: 50px;
+  width: 100%;
+  padding-right: 50px;
+  font-weight:  600;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.processcont .subsubtitle,.processflow .subsubtitle{
+  font-size: 24px;
+  color: #e31e24;
+  font-family: 'Bitter', serif;
+  padding-left: 90px;
+  width: 100%;
+  padding-right: 90px;
+  font-weight:  600;
+  padding-bottom: 30px;
+  text-align: left;
+}
+/*.processcont .flowchart{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.processcont .flow1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.processcont .flow1-1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.processcont .flow1-1 .flow1-1-1{
+  padding-right: 50px;
+}
+.processcont .flow1-1 .flow1-1-2{
+  padding-right: 50px;
+}
+.processcont .flow1-2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.processcont .flow1-2 .flow1-2-1{
+  padding-right: 50px;
+}
+.processcont .flow2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.processcont .flow2-1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+.processcont .flow2-1 .flow2-1-1{
+  padding-left: 50px;
+}
+.processcont .flow2-1 .flow2-1-2{
+  padding-left: 50px;
+}
+.processcont .flow2-2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+.processcont .flow2-2 .flow2-2-1{
+  padding-left: 50px;
+}
+.processcont .flowchart span{
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 150px;
+  height: 100px;
+  align-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid red;
+}*/
+.processflow{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 0 30px;
+  color: #000000;
+  text-align: justify;
+}
+.processflow .parag{
+  padding-left: 90px;
+  width: 100%;
+  padding-right: 90px;
+  font-size: 16px;
+  font-weight: 400; 
+}
+.processflow .heading{
+  font-size: 18px;
+  font-weight: 600;
+}
+.processflow .points{
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.headingflow{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 0 0 30px;
+  color: #000000;
+  text-align: justify;
+}
+.headingflow .parag{
+  padding-left:50px;
+  width: 100%;
+  padding-right:50px;
+  font-size: 16px;
+  font-weight: 400; 
+}
+@media screen and (max-width: 800px){
+  .processcont .title{
+    padding-left: 20px;
+    padding-right: 0;
+    font-size: 24px;
+  }
+  .processcont .linestart{
+    margin-left: -15px;
+    margin-top: 14px;
+    height: 40px;
+  }
+  .processcont .lineend{
+    width: 115px;
+    margin-left: 200px;
+    margin-top: 14px;
+    height: 40px; 
+  }
+  .processflow .parag{
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 15px; 
+  }
+  .processcont .subtitle,.headingflow .subtitle{
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .processcont .subsubtitle,.processflow .subsubtitle{
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .processflow .parag{
+    padding-left: 40px;
+    padding-right: 0px;
+    font-size: 15px;
+  }
+  .processflow .heading{
+    font-size: 16px;
+  }
+    .processflow .points{
+    padding-left: 60px;
+    padding-right: 0px;
+  }
+  .headingflow .parag{
+    padding-left:20px;
+    padding-right:20px;
+    font-size: 15px; 
+  }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -502,10 +806,10 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 .containermainsub{
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 .containermain .card:hover {
   box-shadow: 0 8px 16px 0 rgba(44, 43, 43, 0.911);
@@ -514,12 +818,40 @@ body{
 .containermain .maintitle{
   font-size: 30px;
   text-align: left;
-  padding-left: 50px;
+  padding-left: 90px;
   color: #e31e24;
   font-family: 'Bitter', serif;
   width: 100%;
   font-weight: 600;
   padding-bottom: 30px;
+}
+.containermain .linestart{
+  width: 25px;
+  left: 40px;
+  margin-left: 10px;
+  margin-top: 18px;
+  height: 40px;
+  position: absolute;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+}
+.containermain .lineend{
+  width: 110px;
+  margin-left: 370px;
+  margin-top: 18px;
+  height: 40px;
+  left: 40px;
+  position: absolute;
+  border-top: 2px solid red;  
+}
+.containermain .lineend1{
+  width: 65px;
+  margin-left: 415px;
+  margin-top: 18px;
+  height: 40px;
+  left: 40px;
+  position: absolute;
+  border-top: 2px solid red;  
 }
 .containermain .card .title{
   margin-top: 15px;
@@ -546,6 +878,7 @@ body{
   padding: 15px;
   color: #000000;
   font-size: 16px;
+  border-radius: 8px;
   width: 200px;
   cursor: pointer;
   background-color: #dcdcdc;
@@ -575,6 +908,24 @@ body{
 @media screen and (max-width: 800px) {
   .containermain .maintitle{
     font-size: 22px;
+    padding-left: 60px;
+  }
+  .containermain .linestart{
+    margin-left: -15px;
+    margin-top: 14px;
+    height: 40px;
+  }
+  .containermain .lineend{
+    width: 60px;
+    margin-left: 255px;
+    margin-top: 14px;
+    height: 40px; 
+  }
+  .containermain .lineend1{
+    width: 25px;
+    margin-left: 290px;
+    margin-top: 14px;
+    height: 40px; 
   }
   .containermain  .card {
       width: 85%;
@@ -611,12 +962,46 @@ body{
   font-size: 30px;
   color: #e31e24;
   font-family: 'Bitter', serif;
-  padding-left: 20px;
+  padding-left: 50px;
   width: 100%;
   padding-right: 20px;
   font-weight:  600;
   padding-bottom: 30px;
   text-align: left;
+}
+.aboutusabout .linestart{
+  width: 25px;
+  margin-left: 10px;
+  margin-top: -32px;
+  height: 40px;
+  position: absolute;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+}
+.aboutusabout .lineend{
+  width: 133px;
+  margin-left: 347px;
+  margin-top: -32px;
+  height: 40px;
+  position: absolute;
+  border-top: 2px solid red;  
+}
+.aboutusabout .linestart1{
+  width: 25px;
+  margin-left: 10px;
+  margin-top: -32px;
+  height: 40px;
+  position: absolute;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+}
+.aboutusabout .lineend1{
+  width: 265px;
+  margin-left: 215px;
+  margin-top: -32px;
+  height: 40px;
+  position: absolute;
+  border-top: 2px solid red;  
 }
 .aboutusabout .parag{
   padding-left: 20px;
@@ -627,7 +1012,7 @@ body{
 }
 @media screen and (max-width: 800px){
   .aboutusabout .title{
-    padding-left: 0;
+    padding-left: 20px;
     padding-right: 0;
     font-size: 24px;
   }
@@ -635,6 +1020,29 @@ body{
     padding-left: 0;
     padding-right: 0;
     font-size: 15px; 
+  }
+  .aboutusabout .linestart{
+    margin-left: -15px;
+    margin-top: -36px;
+    height: 40px;
+  }
+  .aboutusabout .lineend{
+    width: 65px;
+    margin-left: 250px;
+    margin-top: -36px;
+    height: 40px; 
+  }
+
+  .aboutusabout .linestart1{
+    margin-left: -15px;
+    margin-top: -36px;
+    height: 40px;
+  }
+  .aboutusabout .lineend1{
+    width: 165px;
+    margin-left: 150px;
+    margin-top: -36px;
+    height: 40px; 
   }
 }
 /*--------------------------------------------------------------
@@ -674,18 +1082,19 @@ body{
 }
 
 .contactuscontainer .contactform .contactsubmit {
-  background-color: #e31e24;
-  color: #dcdcdc;
-  font-size: 18px;
-  padding: 12px 20px;
-  border: none;
+  background-color: #dcdcdc;
+  color: #000000;
+  font-size: 16px;
+  padding: 15px;
+  border: 2px solid #dcdcdc;
   border-radius: 8px;
   cursor: pointer;
 }
 
 .contactuscontainer .contactform .contactsubmit:hover {
-  background-color: #dcdcdc;
+  background-color: #ffffff;
   color: #e31e24;
+  border: 2px solid #e31e24;
 }
 .contactuscontainer .contactaddress{
   display: flex;
@@ -734,13 +1143,24 @@ body{
   text-align: right;
   z-index: 1;
   height: 50px;
-  margin-top: -140px;
+  margin-top: -150px;
   font-size: 16px;
   background-color: #dcdcdc;
   font-weight: 400;
   width: 100%;
-  padding: 5px;
+  padding: 10px;
 }
+.quickheaderpages{
+  position: fixed;
+  text-align: right;
+  z-index: 1;
+  height: 50px;
+  font-size: 16px;
+  background-color: #dcdcdc;
+  font-weight: 400;
+  width: 100%;
+  padding: 10px;
+} 
 .quickheader i{
   margin-right: 20px;
   padding: 5px;
@@ -750,6 +1170,19 @@ body{
   border: 2px solid #dcdcdc;
 }
 .quickheader i:hover{
+  color: #e31e24;
+  background-color: #ffffff;
+  border: 2px solid #e31e24;
+}
+.quickheaderpages i{
+  margin-right: 20px;
+  padding: 5px;
+  color: #000000;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  border: 2px solid #dcdcdc;
+}
+.quickheaderpages i:hover{
   color: #e31e24;
   background-color: #ffffff;
   border: 2px solid #e31e24;
