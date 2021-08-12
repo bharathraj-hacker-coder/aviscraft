@@ -219,20 +219,22 @@ body{
   top: 50%;
   width: auto;
   margin-top: -22px;
+  margin-left: 15px;
+  margin-right: 15px;
   padding: 16px;
   color: #000000;
   background-color: #dcdcdc;
   border: 2px solid #dcdcdc;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 800;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 50%;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 50%;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -496,6 +498,13 @@ body{
   }
 }
 @media screen and (max-width: 800px){
+  .prev, .next {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
   .ourbusiness .column {
     width: 50%;
   }
@@ -618,82 +627,70 @@ body{
   padding-bottom: 30px;
   text-align: left;
 }
-/*.processcont .flowchart{
+.processcont .flowchart{
   display: flex;
   flex-wrap: wrap;
+  padding-left: 110px;
   width: 100%;
-  align-items: center;
   flex-direction: column;
 }
-.processcont .flow1{
+.processcont .flowchart .flow1,
+.processcont .flowchart .flow2,
+.processcont .flowchart .flow3,
+.processcont .flowchart .flow4,
+.processcont .flowchart .flow5,
+.processcont .flowchart .flow6,
+.processcont .flowchart .flow7{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
-  justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
-.processcont .flow1-1{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+.processcont .flowchart .linestartflow{
+  width: 5%;
+  height: 60px;
+  margin-left: -5%;
+  margin-top: -60px;
+  position: absolute;
+  border-left: 2px solid red;
+  border-bottom: 2px solid red;
 }
-.processcont .flow1-1 .flow1-1-1{
-  padding-right: 50px;
+.processcont .flowchart .flow1{
+  padding-left: 10%;
 }
-.processcont .flow1-1 .flow1-1-2{
-  padding-right: 50px;
+.processcont .flowchart .flow2{
+  padding-left: 20%;
 }
-.processcont .flow1-2{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+.processcont .flowchart .flow3{
+  padding-left: 30%;
 }
-.processcont .flow1-2 .flow1-2-1{
-  padding-right: 50px;
+.processcont .flowchart .flow4{
+  padding-left: 40%;
 }
-.processcont .flow2{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 30px;
+.processcont .flowchart .flow5{
+  padding-left: 50%;
 }
-.processcont .flow2-1{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
+.processcont .flowchart .flow6{
+  padding-left: 60%;
 }
-.processcont .flow2-1 .flow2-1-1{
-  padding-left: 50px;
-}
-.processcont .flow2-1 .flow2-1-2{
-  padding-left: 50px;
-}
-.processcont .flow2-2{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-}
-.processcont .flow2-2 .flow2-2-1{
-  padding-left: 50px;
+.processcont .flowchart .flow7{
+  padding-left: 70%;
 }
 .processcont .flowchart span{
-  padding: 10px;
+  padding: 10px 5px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 150px;
-  height: 100px;
+  width: 140px;
+  height: 80px;
   align-content: center;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   border: 2px solid red;
-}*/
+}
 .processflow{
   display: flex;
   flex-wrap: wrap;
@@ -748,6 +745,39 @@ body{
     margin-left: 200px;
     margin-top: 14px;
     height: 40px; 
+  }
+  .processcont .flowchart{
+    padding-left: 55px;
+  }
+  .processcont .flowchart .linestartflow{
+    width: 3%;
+    margin-left: -3%;
+  }
+  .processcont .flowchart .flow1{
+    padding-left: 8%;
+  }
+  .processcont .flowchart .flow2{
+    padding-left: 16%;
+  }
+  .processcont .flowchart .flow3{
+    padding-left: 24%;
+  }
+  .processcont .flowchart .flow4{
+    padding-left: 32%;
+  }
+  .processcont .flowchart .flow5{
+    padding-left: 40%;
+  }
+  .processcont .flowchart .flow6{
+    padding-left: 48%;
+  }
+  .processcont .flowchart .flow7{
+    padding-left: 56%;
+  }
+  .processcont .flowchart span{
+    font-size: 15px;
+    width: 120px;
+    height: 80px;
   }
   .processflow .parag{
     padding-left: 0;
@@ -854,11 +884,11 @@ body{
   border-top: 2px solid red;  
 }
 .containermain .card .title{
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 15px;
   font-family: 'Bitter', serif;
   width: 100%;
-  height: 40px;
+  height: 55px;
   font-size: 24px;
   font-weight: 600;
   color: #e31e24;
@@ -895,10 +925,11 @@ body{
       margin:10px;
   }
   .containermain .card .title{
-    height: 80px;
+    height: 70px;
+    font-size: 20px;
   }
   .containermain .card .productcontent{
-    height: 220px;
+    height: 230px;
     font-size: 15px;
   }
   .containermain .card .rmcont .rmbutton{
