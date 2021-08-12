@@ -260,7 +260,7 @@ body{
     left: 30%;
     transform: translate(-50%,-50%);
     color:#e31e24 ;
-    background-color: #dcdcdc;
+    background-color: white;
     letter-spacing: 4px;
     font-size: 30px;
     padding: 10px 30px 10px;
@@ -326,8 +326,8 @@ body{
   margin-top: 18px;
   height: 40px;
   position: absolute;
-  border-top: 2px solid red;
-  border-left: 2px solid red;
+  border-top: 2px solid #e31e24;
+  border-left: 2px solid #e31e24;
 }
 .homeexpertise .lineend{
   width: 215px;
@@ -335,7 +335,7 @@ body{
   margin-top: 18px;
   height: 40px;
   position: absolute;
-  border-top: 2px solid red;  
+  border-top: 2px solid #e31e24;  
 }
 .homeexpertise .parag{
   text-align: justify;
@@ -409,8 +409,8 @@ body{
   margin-top: 18px;
   height: 40px;
   position: absolute;
-  border-top: 2px solid red;
-  border-left: 2px solid red;
+  border-top: 2px solid #e31e24;
+  border-left: 2px solid #e31e24;
 }
 .markets .lineend{
   width: 295px;
@@ -418,7 +418,7 @@ body{
   margin-top: 18px;
   height: 40px;
   position: absolute;
-  border-top: 2px solid red;  
+  border-top: 2px solid #e31e24;  
 }
 .marketcont .card {
   margin: 20px;
@@ -594,8 +594,8 @@ body{
   margin-top: 18px;
   height: 40px;
   position: absolute;
-  border-top: 2px solid red;
-  border-left: 2px solid red;
+  border-top: 2px solid #e31e24;
+  border-left: 2px solid #e31e24;
 }
 .processcont .lineend{
   width: 205px;
@@ -603,7 +603,7 @@ body{
   margin-top: 18px;
   height: 40px;
   position: absolute;
-  border-top: 2px solid red;  
+  border-top: 2px solid #e31e24;  
 }
 .processcont .subtitle,.headingflow .subtitle{
   font-size: 24px;
@@ -654,8 +654,8 @@ body{
   margin-left: -5%;
   margin-top: -60px;
   position: absolute;
-  border-left: 2px solid red;
-  border-bottom: 2px solid red;
+  border-left: 2px solid #e31e24;
+  border-bottom: 2px solid #e31e24;
 }
 .processcont .flowchart .flow1{
   padding-left: 10%;
@@ -687,9 +687,10 @@ body{
   height: 80px;
   align-content: center;
   text-align: center;
+  background-color: #dcdcdc;
   font-size: 16px;
   font-weight: 400;
-  border: 2px solid red;
+  border: 2px solid #e31e24;
 }
 .processflow{
   display: flex;
@@ -705,6 +706,11 @@ body{
   padding-right: 90px;
   font-size: 16px;
   font-weight: 400; 
+}
+.processflow i{
+  font-size: 12px;
+  margin-right: 10px;
+  color: #e31e24;
 }
 .processflow .heading{
   font-size: 18px;
@@ -862,8 +868,8 @@ body{
   margin-top: 18px;
   height: 40px;
   position: absolute;
-  border-top: 2px solid red;
-  border-left: 2px solid red;
+  border-top: 2px solid #e31e24;
+  border-left: 2px solid #e31e24;
 }
 .containermain .lineend{
   width: 110px;
@@ -872,7 +878,7 @@ body{
   height: 40px;
   left: 40px;
   position: absolute;
-  border-top: 2px solid red;  
+  border-top: 2px solid #e31e24;  
 }
 .containermain .lineend1{
   width: 65px;
@@ -881,7 +887,7 @@ body{
   height: 40px;
   left: 40px;
   position: absolute;
-  border-top: 2px solid red;  
+  border-top: 2px solid #e31e24;  
 }
 .containermain .card .title{
   margin-top: 10px;
@@ -960,11 +966,14 @@ body{
   }
   .containermain  .card {
       width: 85%;
-      height: 300px;
+      height: 320px;
       margin:10px;
   }
+  .containermain .card .rmcont{
+    padding-top: 65px;
+  }
   .containermain .card .title{
-    height: 40px;
+    height: 35px;
     font-size: 18px;
   }
   .containermain .card .productcontent{
@@ -1006,8 +1015,8 @@ body{
   margin-top: -32px;
   height: 40px;
   position: absolute;
-  border-top: 2px solid red;
-  border-left: 2px solid red;
+  border-top: 2px solid #e31e24;
+  border-left: 2px solid #e31e24;
 }
 .aboutusabout .lineend{
   width: 133px;
@@ -1015,7 +1024,7 @@ body{
   margin-top: -32px;
   height: 40px;
   position: absolute;
-  border-top: 2px solid red;  
+  border-top: 2px solid #e31e24;  
 }
 .aboutusabout .linestart1{
   width: 25px;
@@ -1023,8 +1032,8 @@ body{
   margin-top: -32px;
   height: 40px;
   position: absolute;
-  border-top: 2px solid red;
-  border-left: 2px solid red;
+  border-top: 2px solid #e31e24;
+  border-left: 2px solid #e31e24;
 }
 .aboutusabout .lineend1{
   width: 265px;
@@ -1032,7 +1041,7 @@ body{
   margin-top: -32px;
   height: 40px;
   position: absolute;
-  border-top: 2px solid red;  
+  border-top: 2px solid #e31e24;  
 }
 .aboutusabout .parag{
   padding-left: 20px;
