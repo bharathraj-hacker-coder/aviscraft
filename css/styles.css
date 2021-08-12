@@ -708,8 +708,8 @@ body{
   font-weight: 400; 
 }
 .processflow i{
-  font-size: 12px;
-  margin-right: 10px;
+  font-size: 10px;
+  margin-right: 5px;
   color: #e31e24;
 }
 .processflow .heading{
@@ -808,8 +808,9 @@ body{
   .processflow .heading{
     font-size: 16px;
   }
-    .processflow .points{
-    padding-left: 60px;
+  .processflow .points{
+    padding-left: 50px;
+    text-align: left;
     padding-right: 0px;
   }
   .headingflow .parag{
