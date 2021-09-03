@@ -15,7 +15,7 @@
 </head>
 <script>
   function openNav() {
-    document.getElementById("mySidepanel").style.width = "150px";
+    document.getElementById("mySidepanel").style.width = "300px";
   }
 
   function closeNav() {
@@ -43,7 +43,23 @@
         <li><a href="index.html" title="Home" data-ripple=""> Home</a></li>
         <li><a href="aboutus.html" title="About Us" data-ripple="">About Us</a></li>
         <li><a href="processcapabilities.html" title="Process Capabilities" data-ripple="" class="menu-active"> Process Capabilities </a></li>
-        <li><a href="products.html" title="Products" data-ripple="">Products</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn"><a href="products.html" title="Products" data-ripple=""> Products
+              <i class="fa fa-caret-down"></i></a>
+            </button>
+            <div class="dropdown-content">
+              <span class="maintitle">Advanced Composites</span>
+              <a href="cfcproduct.html">Carbon fiber composites</a>
+              <a href="cflproduct.html">Carbon fiber laminates</a>
+              <a href="frpcproduct.html">Fiber reinforced polymer composites</a>
+              <span class="maintitle">Technical Fabrics & Yarns</span>
+              <a href="rfproduct.html">Reinforcement fabrics</a>
+              <a href="clfproduct.html">Coated and laminated fabrics</a>
+              <a href="syproduct.html">Spun yarn</a>
+            </div>
+          </div> 
+        </li>
         <li><a href="contactus.html" title="Contact Us" data-ripple="">Contact Us </a></li>
       </ul>
         <li class="men">
@@ -53,6 +69,16 @@
             <a href="aboutus.html" title="About Us" data-ripple=""> About Us</a>
             <a href="processcapabilities.html" title="Process Capabilities" data-ripple="" class="menu-active"> Process Capabilities</a>
             <a href="products.html" title="Products" data-ripple=""> Products</a>
+            <div class="dropdown-content">
+              <span class="maintitle">Advanced Composites</span>
+              <a href="cfcproduct.html">Carbon fiber composites</a>
+              <a href="cflproduct.html">Carbon fiber laminates</a>
+              <a href="frpcproduct.html">Fiber reinforced polymer composites</a>
+              <span class="maintitle">Technical Fabrics & Yarns</span>
+              <a href="rfproduct.html">Reinforcement fabrics</a>
+              <a href="clfproduct.html">Coated and laminated fabrics</a>
+              <a href="syproduct.html">Spun yarn</a>
+            </div>
             <a href="contactus.html" title="Contact Us" data-ripple=""> Contact Us</a>
           </div>
           <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button> 
@@ -72,31 +98,30 @@
     <span class="subsubtitle">Product Development</span>
     <div class="flowchart">
       <div class="flow1">
-        <div class="linestartflow"></div>
         <span>Design and Development</span>
       </div>
       <div class="flow2">
-        <div class="linestartflow"></div>
+        <div class="linestartflow"><i class="fas fa-chevron-down"></i></div>
         <span>Design feasitility</span>
       </div>
       <div class="flow3">
-        <div class="linestartflow"></div>
+        <div class="linestartflow"><i class="fas fa-chevron-down"></i></div>
         <span>Tooling and machining</span>
       </div>
       <div class="flow4">
-        <div class="linestartflow"></div>
+        <div class="linestartflow"><i class="fas fa-chevron-down"></i></div>
         <span>Prototype development</span>
       </div>
       <div class="flow5">
-        <div class="linestartflow"></div>
+        <div class="linestartflow"><i class="fas fa-chevron-down"></i></div>
         <span>Testing</span>
       </div>
       <div class="flow6">
-        <div class="linestartflow"></div>
+        <div class="linestartflow"><i class="fas fa-chevron-down"></i></div>
         <span>Production optimization</span>
       </div>
       <div class="flow7">
-        <div class="linestartflow"></div>
+        <div class="linestartflow"><i class="fas fa-chevron-down"></i></div>
         <span>Product manufacturing</span>
       </div>
     </div>
@@ -115,7 +140,7 @@
     <div class="processflow">
       <span class="subsubtitle">Prototype development and manufacturing</span>
       <span class="parag">Our composite workshop in equipped to provide our stop solution from parts manufacturing to assembly of compsite structures under our roof. High proficient and experienced human resource in composite manufacturing adds and the core strength of our organization.</span><br>
-      <span class="parag heading">our manufacturing process include:</span>
+      <span class="parag heading">Our manufacturing process include:</span>
       <span class="parag points"><i class="fas fa-circle"></i>Hand laying</span>
       <span class="parag points"><i class="fas fa-circle"></i>Mold making(small batch production)</span>
       <span class="parag points"><i class="fas fa-circle"></i>Vaccum assisted resine imfusion moulding</span>
