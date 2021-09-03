@@ -59,7 +59,7 @@ body{
     height: 95px;
 }
 
-.container {
+#header .container {
     padding-right: 2%;
     padding-left: 3%;
 }
@@ -90,7 +90,7 @@ body{
 }
 /* Nav Meu Styling */
 
-.nav-menu a {
+.nav-menu a{
   padding: 8px;
   text-decoration: none;
   display: block;
@@ -108,7 +108,7 @@ body{
 }
 
 .nav-menu > li {
-  margin-left: 8px;
+  margin-left: 4px;
 }
 .nav-menu > li > a:before {
   content: "";
@@ -117,6 +117,7 @@ body{
   height: 3px;
   bottom: 0;
   left: 0;
+  z-index: 1;
   background-color: #e31e24;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
@@ -127,9 +128,60 @@ body{
   visibility: visible;
   width: 100%;
 }
+.nav-menu .dropdown {
+  float: left;
+  overflow: hidden;
+}
 
+.nav-menu .dropdown .dropbtn {
+  border: none;
+  outline: none;
+  background-color: white;
+  z-index: -1;
+}
+.nav-menu .dropdown-content a{
+  font-size: 14px;
+}
+.nav-menu .dropdown-content .maintitle{
+  padding: 3px;
+  text-decoration: none;
+  display: block;
+  color: #e31e24;
+  font-weight: 800;
+  font-size: 20px;
+  outline: none;
+  font-family: 'Bitter', serif;  
+}
+.nav-menu .dropdown-content {
+  font-family: 'Bitter', serif;
+  padding: 4px;
+  display: none;
+  margin-left: -50px;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.nav-menu .dropdown:hover .dropdown-content {
+  display: block;
+}
 .men{
   display: none;
+}
+.men .dropdown-content a{
+  padding: 15px 15px 15px 33px;
+  font-size: 14px;
+}
+.men .dropdown-content .maintitle{
+  padding: 8px 24px;
+  text-decoration: none;
+  display: block;
+  color: #e31e24;
+  font-weight: 800;
+  font-size: 20px;
+  outline: none;
+  font-family: 'Bitter', serif;  
 }
 @media screen and (max-width: 800px) {
     .nshow{
@@ -630,7 +682,6 @@ body{
 .processcont .flowchart{
   display: flex;
   flex-wrap: wrap;
-  padding-left: 110px;
   width: 100%;
   flex-direction: column;
 }
@@ -644,51 +695,35 @@ body{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+}
+.processcont .flowchart i{
+  position: absolute;
+  color: #e31e24;
+  margin-top: 15px;
+  margin-left: -5.5px;
 }
 .processcont .flowchart .linestartflow{
-  width: 5%;
-  height: 60px;
-  margin-left: -5%;
-  margin-top: -60px;
+  height: 24px;
+  width: 3px;
+  margin-top: -81px;
   position: absolute;
-  border-left: 2px solid #e31e24;
-  border-bottom: 2px solid #e31e24;
-}
-.processcont .flowchart .flow1{
-  padding-left: 10%;
-}
-.processcont .flowchart .flow2{
-  padding-left: 20%;
-}
-.processcont .flowchart .flow3{
-  padding-left: 30%;
-}
-.processcont .flowchart .flow4{
-  padding-left: 40%;
-}
-.processcont .flowchart .flow5{
-  padding-left: 50%;
-}
-.processcont .flowchart .flow6{
-  padding-left: 60%;
-}
-.processcont .flowchart .flow7{
-  padding-left: 70%;
+  background-color: #e31e24;
 }
 .processcont .flowchart span{
   padding: 10px 5px 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 140px;
-  height: 80px;
+  width: 350px;
+  height: 55px;
   align-content: center;
   text-align: center;
   background-color: #dcdcdc;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   border: 2px solid #e31e24;
 }
@@ -708,8 +743,8 @@ body{
   font-weight: 400; 
 }
 .processflow i{
-  font-size: 10px;
-  margin-right: 5px;
+  font-size: 12px;
+  margin-right: 10px;
   color: #e31e24;
 }
 .processflow .heading{
@@ -752,38 +787,16 @@ body{
     margin-top: 14px;
     height: 40px; 
   }
-  .processcont .flowchart{
-    padding-left: 55px;
+  .processcont .flowchart {
+    padding-left: 60px;
   }
   .processcont .flowchart .linestartflow{
-    width: 3%;
-    margin-left: -3%;
-  }
-  .processcont .flowchart .flow1{
-    padding-left: 8%;
-  }
-  .processcont .flowchart .flow2{
-    padding-left: 16%;
-  }
-  .processcont .flowchart .flow3{
-    padding-left: 24%;
-  }
-  .processcont .flowchart .flow4{
-    padding-left: 32%;
-  }
-  .processcont .flowchart .flow5{
-    padding-left: 40%;
-  }
-  .processcont .flowchart .flow6{
-    padding-left: 48%;
-  }
-  .processcont .flowchart .flow7{
-    padding-left: 56%;
+    margin-top: -72px;
   }
   .processcont .flowchart span{
-    font-size: 15px;
-    width: 120px;
-    height: 80px;
+    font-size: 16px;
+    width: 220px;
+    height: 45px;
   }
   .processflow .parag{
     padding-left: 0;
@@ -809,8 +822,7 @@ body{
     font-size: 16px;
   }
   .processflow .points{
-    padding-left: 50px;
-    text-align: left;
+    padding-left: 60px;
     padding-right: 0px;
   }
   .headingflow .parag{
@@ -836,7 +848,7 @@ body{
   color: #000000;
   padding: 20px;
   padding-left: 30px;
-  height: 350px;
+  height: 370px;
   position: relative;
 }
 .containermain{
@@ -901,7 +913,7 @@ body{
   color: #e31e24;
 }
 .containermain .card .productcontent{
-  height: 150px;
+  height: 170px;
   width: 100%;
   padding-right: 30px;
   font-size: 16px;
@@ -911,24 +923,26 @@ body{
 .containermain .card .rmcont{
   padding-top: 25px;
 }
-.containermain .card .rmcont .rmbutton{
-  padding: 15px;
+.containermain .card .rmcont a{
+  padding:  5px;
   color: #000000;
-  font-size: 16px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
   border-radius: 8px;
-  width: 200px;
+  width: 100px;
   cursor: pointer;
   background-color: #dcdcdc;
   border: 2px solid #dcdcdc;
 }
-.containermain .card .rmcont .rmbutton:hover{
+.containermain .card .rmcont a:hover{
   background-color: #ffffff;
   border: 2px solid #e31e24;
   color: #e31e24;
 }
 @media screen and (max-width: 1200px) {
   .containermain  .card {
-      height: 450px;
+      height: 480px;
       margin:10px;
   }
   .containermain .card .title{
@@ -936,11 +950,8 @@ body{
     font-size: 20px;
   }
   .containermain .card .productcontent{
-    height: 230px;
+    height: 260px;
     font-size: 15px;
-  }
-  .containermain .card .rmcont .rmbutton{
-    width: 150px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -967,7 +978,7 @@ body{
   }
   .containermain  .card {
       width: 85%;
-      height: 320px;
+      height: 300px;
       margin:10px;
   }
   .containermain .card .rmcont{
@@ -978,10 +989,9 @@ body{
     font-size: 18px;
   }
   .containermain .card .productcontent{
-    height: 100px;
+    height: 80px;
   }
-  .containermain .card .rmcont .rmbutton{
-    width: 200px;
+  .containermain .card .rmcont a{
     font-size: 15px;
   }
 }
@@ -1333,3 +1343,189 @@ body{
 /*--------------------------------------------------------------
 # footer end
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# productpage new start
+--------------------------------------------------------------*/
+.productpagetitlebg img {
+    margin-top: 150px;
+    overflow: visible;
+    width: 100%;
+    height: 200px;
+}
+.productpagetitlebg {
+    position: relative;
+    text-align: left;
+}
+.productpagetitlebg .centered{
+    margin-top: 45px;
+    position:absolute ;
+    top:50%;
+    margin-left: 40px;
+    margin-right: 40px;
+    color:#e31e24 ;
+    background-color: white;
+    letter-spacing: 4px;
+    font-size: 30px;
+    padding: 10px 30px 10px;
+}
+.productpgsplit{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+}
+.sidebar-content{
+  width: 26%;
+  min-width: 340px;
+  display: block;
+}
+.sidebar-content .maintitle{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-decoration: none;
+  display: block;
+  color: #e31e24;
+  font-weight: 800;
+  font-size: 20px;
+  outline: none;
+  font-family: 'Bitter', serif;  
+}
+.sidebar-content a{
+  padding: 15px;
+  font-size: 16px;
+  background-color: #dcdcdc;
+  margin-bottom: 5px;
+  display: block;
+  color: #000000;
+  border: 2px solid #dcdcdc;
+  font-weight: 600;
+  outline: none;
+  font-family: 'Bitter', serif;
+}
+.sidebar-content a i{
+  float: right;
+}
+
+.sidebar-content .menu-active,
+.sidebar-content a:hover {
+  color: #e31e24;
+  border: 2px solid #e31e24;
+  background-color: #ffffff;
+}
+.main-content{
+  width: 68%;
+  display: block;
+}
+.productproduct{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  color: #000000;
+  text-align: justify;
+}
+.productproduct .parag{
+  padding-left: 20px;
+  width: 100%;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 400; 
+}
+.productproduct .title{
+  font-size: 30px;
+  color: #e31e24;
+  font-family: 'Bitter', serif;
+  padding-left: 20px;
+  width: 100%;
+  padding-right: 20px;
+  font-weight:  600;
+  padding-bottom: 30px;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 2px solid #e31e24;
+}
+
+th{
+  border: 2px solid #e31e24;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  font-family: 'Bitter', serif;  
+}
+td {
+  border: 2px solid #e31e24;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Bitter', serif;
+}
+.productproduct i{
+  font-size: 12px;
+  margin-right: 10px;
+  color: #e31e24;
+}
+.productproduct .points{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media screen and (max-width: 1000px) {
+  .sidebar-content{
+    display: none;
+  }
+  .main-content{
+    width: 100%!important;
+  }
+  .productpgsplit{
+    display: block;
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .main-content{
+    width: 63%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .main-content{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .productpagetitlebg .centered{
+    text-align: center;
+    font-size: 18px;
+  }
+  .productproduct .parag{
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 15px; 
+  }
+  .productproduct .title{
+    padding-left: 0px;
+    padding-right: 0;
+    font-size: 24px;
+  }
+  th{
+    font-size: 16px;
+    padding: 4px;
+  }
+  td {
+    font-size: 15px;
+    padding: 4px;
+  }
+  .productproduct .points{
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+}
