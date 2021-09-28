@@ -1311,7 +1311,6 @@ body{
   width: 100%;
   font-weight: 600;
   padding-bottom: 10px;
-  padding-top: 30px;
 }
 .quickfooter .quickaddress i{
   padding-right: 10px;
@@ -1354,6 +1353,9 @@ body{
   }
   .quickfooter .quicklink{
     width: 90%;
+  }
+  .quickfooter .quicklink .contentaddlink .title{
+    padding-top: 30px;
   }
   .footer{
     text-align: center;
