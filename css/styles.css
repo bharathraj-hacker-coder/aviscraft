@@ -492,7 +492,7 @@ body{
   transition: transform .4s;
 }
 .marketcont .image1:hover{
-  transform: scale(1.3);
+  transform: scale(1.05);
   transform-origin: 50% 50%;
 }
 .marketcont .centeredtitle {
