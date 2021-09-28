@@ -172,7 +172,7 @@ body{
 }
 .men .dropdown-content a{
   padding: 15px 15px 15px 33px;
-  font-size: 14px;
+  font-size: 13px;
 }
 .men .dropdown-content .maintitle{
   padding: 8px 24px;
@@ -211,16 +211,16 @@ body{
         font-size: 20px;
     }
     .openbtn,.closebtn {
-        background: #e31e24;
-        color: #dcdcdc;
+        background-color: #ffffff;
+        color: #000000;
         font-size: 20px;
-        border: 2px solid #dcdcdc;
+        border: 2px solid #ffffff;
         cursor: pointer;
         height: 30px;
         width: 30px;
     }
     .openbtn:hover,.closebtn:hover {
-        background:#dcdcdc;
+        border: 2px solid #e31e24;
         color: #e31e24;
     }
 
@@ -230,12 +230,12 @@ body{
         display: block;
     }
     .men a{
-      padding: 15px;
+      padding: 0px 15px 15px 15px;
       text-decoration: none;
       display: block;
       color: #000000;
       font-weight: 600;
-      font-size: 18px;
+      font-size: 16px;
       outline: none;
       font-family: 'Bitter', serif;
     }
@@ -276,7 +276,7 @@ body{
   margin-right: 15px;
   padding: 16px;
   color: #000000;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 800;
   transition: 0.6s ease;
   border-radius: 50%;
@@ -312,7 +312,7 @@ body{
     background-color: white;
     letter-spacing: 4px;
     font-size: 30px;
-    padding: 10px 30px 10px;
+    padding: 10px 29px 10px;
 }
 .homecontainer{
   display: flex;
@@ -349,7 +349,6 @@ body{
   padding-left: 5%;
 }
 .homecontainer .image img{
-  padding: 2%;
   width: 100%;
   border-radius: 10%;
 }
@@ -439,7 +438,7 @@ body{
 .markets{
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 40px 40px;
+  padding: 0 40px;
   color: #000000;
   text-align: left;
 }
@@ -482,7 +481,7 @@ body{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 .marketcont .image1 {
   position: relative;
@@ -496,7 +495,7 @@ body{
   top: 0;
   background: rgba(0, 0, 0, 0.5);
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   width: 100%;
   padding: 20px;
@@ -518,7 +517,7 @@ body{
       margin:10px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
   .marketcont  .card {
       width: 90%;
       margin:15px;
@@ -537,13 +536,12 @@ body{
     padding-top: 20px;
   }
   .homecontainer .parag{
-    font-size: 15px; 
     padding-left: 2%;
     padding-right: 2%;
     width: 90%;
   }
   .homecontainer .parag .title{
-    font-size: 22px;
+    font-size: 24px;
     line-height: 25px;
   }
 }
@@ -552,63 +550,72 @@ body{
     margin-left: 8px;
     margin-right: 8px;
     padding: 10px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
   }
   .ourbusiness .column {
     width: 50%;
   }
-  .homeexpertise .title{
-    font-size: 22px;
-    padding-left: 20px;
-    padding-right: 0;
+  .homecontainer .parag{
+    font-size: 13px;
   }
-  .ourbusiness .title{
-    font-size: 22px;
-    padding-left: 20px;
-    padding-right: 0;    
+  .homecontainer .parag .title{
+    font-size: 18px;
+  }
+  .homeexpertise .title{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 0;
   }
   .homeexpertise .parag{
     padding-left: 0;
     padding-right: 0;
-    font-size: 15px; 
+    font-size: 13px; 
   }
   .homeexpertise .linestart{
-    margin-left: -15px;
+    margin-left: -20px;
     margin-top: 14px;
     height: 40px;
   }
   .homeexpertise .lineend{
-    width: 135px;
-    margin-left: 180px;
+    width: 125px;
+    margin-left: 145px;
     margin-top: 14px;
     height: 40px; 
   }
+  .marketcont .centeredtitle {
+    font-size: 13px;
+  }
+  .marketcont .centeredtitle span{
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
   .markets .title{
-    font-size: 22px;
-    padding-left: 20px;
+    font-size: 20px;
+    padding-left: 10px;
     padding-right: 0;
   }
   .markets .linestart{
     width: 25px;
-    margin-left: -15px;
+    margin-left: -20px;
     margin-top: 14px;
     height: 40px;
   }
   .markets .lineend{
-    width: 195px;
-    margin-left: 120px;
+    width: 180px;
+    margin-left: 90px;
     margin-top: 14px;
     height: 40px;
   }
   .ourbusiness .parag {
     padding-left: 0;
     padding-right: 0;
+    font-size: 15px;
   }
   .pagetitlebg .centered{
     left: 50%;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
   }
   .homecontainer .objectimage{
     height: 400px;
@@ -620,10 +627,16 @@ body{
 /*--------------------------------------------------------------
 # process capabilities start
 --------------------------------------------------------------*/
-.processcont {
+.processcont{
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 40px 10px;
+  padding: 40px 40px 0;
+  text-align: justify;
+}
+.processcont2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px 0;
   color: #000000;
   text-align: justify;
 }
@@ -655,11 +668,11 @@ body{
   position: absolute;
   border-top: 2px solid #e31e24;  
 }
-.processcont .subtitle,.headingflow .subtitle{
+.processcont2 .subtitle,.headingflow .subtitle{
   font-size: 24px;
   color: #e31e24;
   font-family: 'Bitter', serif;
-  padding-left: 50px;
+  padding-left: 70px;
   width: 100%;
   padding-right: 50px;
   font-weight:  600;
@@ -689,9 +702,6 @@ body{
   width: 60%;
   align-self: center;
   padding: 2% 4% 2%;
-}
-.flowchart .parag{
-  width: 100%;
   font-size: 16px;
   font-weight: 400; 
 }
@@ -715,10 +725,13 @@ body{
   font-family: 'Bitter', serif;
   padding-left: 5%;
   width: 100%;
-  padding-right: 5%;
+  padding-right: 10%;
   font-weight:  600;
   text-align: left;
   position: relative;
+}
+.headingflow .marketcont{
+  padding-bottom: 0px;
 }
 .marketcont .centered-title {
   position: absolute;
@@ -740,31 +753,35 @@ body{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 0 0 30px;
+  padding: 0 0 40px;
   color: #000000;
   text-align: justify;
 }
 .headingflow .parag{
-  padding-left:50px;
+  padding-left:70px;
   width: 100%;
   padding-right:50px;
   font-size: 16px;
   font-weight: 400; 
 }
 @media screen and (max-width: 800px){
+  .processcont2 {
+    padding: 0;
+    text-align: center;
+  }
   .processcont .title{
-    padding-left: 20px;
+    padding-left: 8px;
     padding-right: 0;
-    font-size: 24px;
+    font-size: 20px;
   }
   .processcont .linestart{
-    margin-left: -15px;
+    margin-left: -20px;
     margin-top: 14px;
     height: 40px;
   }
   .processcont .lineend{
-    width: 115px;
-    margin-left: 200px;
+    width: 120px;
+    margin-left: 150px;
     margin-top: 14px;
     height: 40px; 
   }
@@ -778,6 +795,7 @@ body{
   .flowchart .right-text{
     width: 100%;
     padding: 4% 6% 4%;
+    font-size: 13px;
   }
   .flowchart .left-image img{
     border-radius: 0;
@@ -786,26 +804,30 @@ body{
     border-radius:  0;
   }
   .flowchart .sub-title{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
   }
   .flowchart .parag{
-    font-size: 15px;
+    font-size: 13px;
   }
-  .processcont .subtitle,.headingflow .subtitle{
+  .processcont2 .subtitle,.headingflow .subtitle{
     font-size: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 40px 30px;
   }
-  .processflow .parag{
-    padding-left: 40px;
-    padding-right: 0px;
+  .marketcont .centered-title {
     font-size: 15px;
+  }
+  .headingflow .marketcont{
+    padding-bottom: 40px;
+  }
+  .headingflow{
+    padding: 0;
   }
   .headingflow .parag{
-    padding-left:20px;
-    padding-right:20px;
-    font-size: 15px; 
+    padding: 0 40px 40px;
+    font-size: 13px; 
   }
 }
 /*--------------------------------------------------------------
@@ -823,8 +845,7 @@ body{
   width: 28%;
   text-align: left;
   color: #000000;
-  padding: 20px;
-  padding-left: 30px;
+  padding: 20px 25px;
   height: 370px;
   position: relative;
 }
@@ -892,7 +913,6 @@ body{
 .containermain .card .productcontent{
   height: 170px;
   width: 100%;
-  padding-right: 30px;
   font-size: 16px;
   font-weight: 400;
   text-align: left;
@@ -903,7 +923,7 @@ body{
 .containermain .card .rmcont a{
   padding:  5px;
   color: #000000;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   border-radius: 8px;
@@ -933,23 +953,23 @@ body{
 }
 @media screen and (max-width: 800px) {
   .containermain .maintitle{
-    font-size: 22px;
-    padding-left: 60px;
+    font-size: 20px;
+    padding-left: 50px;
   }
   .containermain .linestart{
-    margin-left: -15px;
+    margin-left: -20px;
     margin-top: 14px;
     height: 40px;
   }
   .containermain .lineend{
-    width: 60px;
-    margin-left: 255px;
+    width: 50px;
+    margin-left: 220px;
     margin-top: 14px;
     height: 40px; 
   }
   .containermain .lineend1{
-    width: 25px;
-    margin-left: 290px;
+    width: 20px;
+    margin-left: 250px;
     margin-top: 14px;
     height: 40px; 
   }
@@ -967,9 +987,18 @@ body{
   }
   .containermain .card .productcontent{
     height: 80px;
+    font-size: 13px;
   }
   .containermain .card .rmcont a{
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 390px){
+  .containermain  .card {
+      height: 310px;
+  }
+  .containermain .card .rmcont{
+    padding-top: 100px;
   }
 }
 /*--------------------------------------------------------------
@@ -1043,35 +1072,35 @@ body{
     padding: 40px;
   }
   .aboutusabout .title{
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 0;
-    font-size: 24px;
+    font-size: 20px;
   }
   .aboutusabout .parag{
     padding-left: 0;
     padding-right: 0;
-    font-size: 15px; 
+    font-size: 13px; 
   }
   .aboutusabout .linestart{
-    margin-left: -15px;
+    margin-left: -20px;
     margin-top: -36px;
     height: 40px;
   }
   .aboutusabout .lineend{
-    width: 65px;
-    margin-left: 250px;
+    width: 70px;
+    margin-left: 200px;
     margin-top: -36px;
     height: 40px; 
   }
 
   .aboutusabout .linestart1{
-    margin-left: -15px;
+    margin-left: -20px;
     margin-top: -36px;
     height: 40px;
   }
   .aboutusabout .lineend1{
-    width: 165px;
-    margin-left: 150px;
+    width: 155px;
+    margin-left: 115px;
     margin-top: -36px;
     height: 40px; 
   }
@@ -1090,11 +1119,12 @@ body{
   flex-direction: row;
   padding-top: 30px;
   font-weight: 400;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .contactuscontainer .contactform{
   font-family: 'Bitter', serif;
-  width: 45%;
+  width: 48%;
+  font-size: 18px;
   height: 600px;
   padding: 20px;
   display: flex;
@@ -1106,7 +1136,7 @@ body{
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -1115,8 +1145,8 @@ body{
 .contactuscontainer .contactform .contactsubmit {
   background-color: #dcdcdc;
   color: #000000;
-  font-size: 16px;
-  padding: 15px;
+  font-size: 18px;
+  padding: 5px;
   border: 2px solid #dcdcdc;
   border-radius: 8px;
   cursor: pointer;
@@ -1131,7 +1161,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 45%;
+  width: 48%;
   padding: 20px;
   height: 600px;
 }
@@ -1139,7 +1169,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 10px; 
+  padding: 0 0 10px 0; 
 }
 .contactuscontainer .contactaddress i{
   padding-right: 10px;
@@ -1148,21 +1178,34 @@ body{
 .mapview{
   padding: 20px;
 }
-@media screen and (max-width: 930px){
+@media screen and (max-width: 800px){
   .contactuscontainer{
+    font-size: 13px;
     flex-direction: column;
     align-items: center;
   }
   .contactuscontainer .contactform{
     width: 90%;
+    font-size: 15px;
+    padding: 10px;
   }
   .contactuscontainer .contactaddress{
-    height: 340px;
-    padding: 20px 0px;
+    height: 200px;
+    padding: 20px 10px 0;
     width: 90%;
   }
+  .contactuscontainer .contactform input[type=text], select, textarea {
+    font-size: 13px;
+  }
+  .contactuscontainer .contactform .contactsubmit {
+    font-size: 15px;
+  }
 }
-
+@media screen and (max-width: 335px){
+  .contactuscontainer .contactaddress{
+    padding: 20px 0 0;
+  }
+}
 /*--------------------------------------------------------------
 # contact us end
 --------------------------------------------------------------*/
@@ -1236,7 +1279,6 @@ body{
   flex-direction: column;
   width: 52%;
   padding: 5px;
-  height: 300px;
   border-right: 2px solid #e31e24;
 }
 .quickfooter .quicklink{
@@ -1244,8 +1286,7 @@ body{
   flex-wrap: wrap;
   flex-direction: column;
   width: 46%;
-  padding: 5px;
-  height: 300px;
+  padding: 10px;
 }
 .quickfooter .quickaddress .contentaddress{
   display: flex;
@@ -1256,8 +1297,7 @@ body{
 .quickfooter .quicklink .contentaddlink{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  padding: 10px; 
+  flex-direction: column; 
 }
 .quickfooter .quicklink .contentaddlink .title{
   font-size: 20px;
@@ -1266,6 +1306,7 @@ body{
   width: 100%;
   font-weight: 600;
   padding-bottom: 10px;
+  padding-top: 30px;
 }
 .quickfooter .quickaddress i{
   padding-right: 10px;
@@ -1303,12 +1344,10 @@ body{
   }
   .quickfooter .quickaddress{
     width: 90%;
-    height:260px;
     border-right: none;
     border-bottom: 2px solid #e31e24;
   }
   .quickfooter .quicklink{
-    height: 200px;
     width: 90%;
   }
   .footer{
@@ -1318,6 +1357,22 @@ body{
   .footer .leftalign,
   .footer .rightalign{
     float: none;
+  }
+}
+@media screen and (max-width: 376px){
+  .quickfooter{
+    font-size: 13px;
+  }
+  .quickfooter .quickaddress, .quickfooter .quicklink{
+    padding: 0;
+  }
+  .footer{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 390px){
+  .quickfooter .quickaddress .contentaddress{
+    padding: 10px 0 10px 0; 
   }
 }
 /*--------------------------------------------------------------
@@ -1353,7 +1408,7 @@ body{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding: 40px;
+  padding: 40px 40px 0 40px;
 }
 .sidebar-content{
   width: 26%;
@@ -1400,7 +1455,7 @@ body{
 .productproduct{
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   color: #000000;
   text-align: justify;
 }
@@ -1412,7 +1467,7 @@ body{
   font-weight: 400; 
 }
 .productproduct .title{
-  font-size: 30px;
+  font-size: 24px;
   color: #e31e24;
   font-family: 'Bitter', serif;
   padding-left: 20px;
@@ -1427,7 +1482,7 @@ body{
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -1455,7 +1510,7 @@ body{
   overflow-x:auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 table {
   border-collapse: collapse;
@@ -1502,7 +1557,6 @@ td {
   }
   .productpgsplit{
     display: block;
-    padding: 40px;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -1523,12 +1577,12 @@ td {
   .productproduct .parag{
     padding-left: 0;
     padding-right: 0;
-    font-size: 15px; 
+    font-size: 13px; 
   }
   .productproduct .title{
     padding-left: 0px;
     padding-right: 0;
-    font-size: 24px;
+    font-size: 18px;
   }
   .main-content .cfc-images{
     flex-direction: column;
@@ -1543,20 +1597,20 @@ td {
   .cfl-images .img-middle,
   .cfl-images .img-right{
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
   .table-main{
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   th{
-    font-size: 16px;
+    font-size: 15px;
     padding: 4px;
   }
   td {
-    font-size: 15px;
+    font-size: 13px;
     padding: 4px;
   }
   .productproduct .points{
