@@ -382,7 +382,6 @@ body{
   width: 215px;
   margin-left: 265px;
   margin-top: 18px;
-  display: block;
   height: 40px;
   position: absolute;
   border-top: 2px solid #e31e24;  
@@ -584,8 +583,8 @@ body{
     height: 40px;
   }
   .homeexpertise .lineend{
-    width: 110px;
-    margin-left: 160px;
+    width: 125px;
+    margin-left: 145px;
     margin-top: 14px;
     height: 40px; 
   }
@@ -627,12 +626,17 @@ body{
     height: 400px;
   }
 }
-@media screen and (max-width: 400px){
+
+@media screen and (max-width: 380px){
   .homeexpertise .lineend{
-    display: none;
+    width: 105px;
+    margin-left: 165px;
+  }
+  .markets .lineend{
+    width: 160px;
+    margin-left: 110px;
   }
 }
-
 /*--------------------------------------------------------------
 # Home end
 --------------------------------------------------------------*/
