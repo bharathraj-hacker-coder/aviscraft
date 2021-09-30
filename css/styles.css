@@ -364,6 +364,7 @@ body{
   color: #e31e24;
   font-family: 'Bitter', serif;
   padding-left: 50px;
+  width: 100%;
   padding-right: 20px;
   font-weight: 600;
   padding-bottom: 30px;
@@ -582,8 +583,8 @@ body{
     height: 40px;
   }
   .homeexpertise .lineend{
-    width: 125px;
-    margin-left: 145px;
+    width: 110px;
+    margin-left: 155px;
     margin-top: 14px;
     height: 40px; 
   }
