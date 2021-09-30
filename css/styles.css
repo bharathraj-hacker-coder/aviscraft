@@ -583,8 +583,8 @@ body{
     height: 40px;
   }
   .homeexpertise .lineend{
-    width: 125px;
-    margin-left: 145px;
+    width: 120px;
+    margin-left: 150px;
     margin-top: 14px;
     height: 40px; 
   }
@@ -607,8 +607,8 @@ body{
     height: 40px;
   }
   .markets .lineend{
-    width: 180px;
-    margin-left: 90px;
+    width: 175px;
+    margin-left: 95px;
     margin-top: 14px;
     height: 40px;
   }
@@ -629,11 +629,11 @@ body{
 
 @media screen and (max-width: 380px){
   .homeexpertise .lineend{
-    width: 105px;
+    width: 115px;
     margin-left: 165px;
   }
   .markets .lineend{
-    width: 160px;
+    width: 170px;
     margin-left: 110px;
   }
 }
@@ -796,8 +796,8 @@ body{
     height: 40px;
   }
   .processcont .lineend{
-    width: 120px;
-    margin-left: 150px;
+    width: 115px;
+    margin-left: 155px;
     margin-top: 14px;
     height: 40px; 
   }
@@ -844,6 +844,12 @@ body{
   .headingflow .parag{
     padding: 0 40px 40px;
     font-size: 13px; 
+  }
+}
+@media screen and (max-width: 380px){
+  .processcont .lineend{
+    width: 110px;
+    margin-left: 170px;
   }
 }
 /*--------------------------------------------------------------
@@ -978,14 +984,14 @@ body{
     height: 40px;
   }
   .containermain .lineend{
-    width: 50px;
-    margin-left: 220px;
+    width: 45px;
+    margin-left: 225px;
     margin-top: 14px;
     height: 40px; 
   }
   .containermain .lineend1{
-    width: 20px;
-    margin-left: 250px;
+    width: 15px;
+    margin-left: 255px;
     margin-top: 14px;
     height: 40px; 
   }
@@ -1015,6 +1021,16 @@ body{
   }
   .containermain .card .rmcont{
     padding-top: 100px;
+  }
+}
+@media screen and (max-width: 380px){
+  .containermain .lineend{
+    width: 40px;
+    margin-left: 240px;
+  }
+  .containermain .lineend1{
+    width: 10px;
+    margin-left: 270px;
   }
 }
 /*--------------------------------------------------------------
@@ -1103,8 +1119,8 @@ body{
     height: 40px;
   }
   .aboutusabout .lineend{
-    width: 70px;
-    margin-left: 200px;
+    width: 65px;
+    margin-left: 205px;
     margin-top: -36px;
     height: 40px; 
   }
@@ -1115,8 +1131,22 @@ body{
     height: 40px;
   }
   .aboutusabout .lineend1{
-    width: 155px;
-    margin-left: 115px;
+    width: 150px;
+    margin-left: 120px;
+    margin-top: -36px;
+    height: 40px; 
+  }
+}
+@media screen and (max-width: 380px){
+  .aboutusabout .lineend{
+    width: 60px;
+    margin-left: 220px;
+    margin-top: -36px;
+    height: 40px; 
+  }
+  .aboutusabout .lineend1{
+    width: 145px;
+    margin-left: 135px;
     margin-top: -36px;
     height: 40px; 
   }
